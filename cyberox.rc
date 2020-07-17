@@ -48,16 +48,16 @@ echo -e "
 Fetching Device :
 [0m"
 sleep 2
-echo -ne "\e[34mDate&Time: "
+echo -ne "\e[34mDate&Time:\e[33 "
 date "+%a %d %b %Y %Z %H:%M:%S"
 sleep 1
-echo -ne "\e[34mTime Zone: "
+echo -ne "\e[34mTime Zone:\e[33 "
 getprop persist.sys.timezone
 sleep 1
-echo -ne "\e[34mDevice Brand: "
+echo -ne "\e[34mDevice Brand:\e[33 "
 getprop ro.product.brand
 sleep 1
-echo -ne "\e[34mDevice Model: "
+echo -ne "\e[34mDevice Model:\e[33 "
 getprop ro.product.model
 sleep 2
 echo ""
