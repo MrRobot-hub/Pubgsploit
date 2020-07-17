@@ -1,0 +1,438 @@
+#!/bin/bash
+# A Test program for fun :p
+
+clear && echo -e "\e[36m [Prossing]" && echo "" && echo ""
+
+sleep 1
+
+start=`date +%s`
+echo -e "
+Fetching Device :
+[0m"
+sleep 2
+echo -n "Date&Time: "
+date "+%a %d %b %Y %Z %H:%M:%S"
+sleep 1
+echo -n "Time Zone: "
+getprop persist.sys.timezone
+sleep 1
+echo -n "GSM Operator: "
+getprop gsm.operator.alpha
+sleep 1
+echo -n "ISO Country: "
+getprop gsm.operator.iso-country
+sleep 1
+echo -n "Device Brand: "
+getprop ro.product.brand
+sleep 1
+echo -n "Device Model: "
+getprop ro.product.model
+sleep 2
+echo ""
+clear
+echo " "
+YELLOW='[1;33m'
+BLUE='\e[1;94m'
+RED='\e[31m'
+BGREEN="\e[1;32m"
+PURPLE="\e[0;35m"
+BRed="\e[1;31m"
+BYellow="\e[1;33m"
+echo " "
+printf "${YELLOW}"
+printf "${BLUE}                ╭═════════════════════════╮\n"
+sleep 0.5
+
+printf "${YELLOW}                 DEVELOPER : Umer Farid\n"
+sleep 0.5
+
+printf "${YELLOW}                 PLATFORM : PHOENIX/Android\n"
+sleep 0.5
+
+printf "${YELLOW}                 VERSION : GLOBAL / KOREA\n"
+sleep 0.5
+
+printf "${YELLOW}                 CHANNEL : Cybernetics\n"
+sleep 0.5
+
+printf "${YELLOW}                 SUPPORT : Dark Minded Coders\n"
+sleep 0.5
+
+printf "${YELLOW}                 CREDIT : @Umer_Farid\n"
+sleep 0.5
+printf "${BLUE}                ╰═════════════════════════╯"
+echo " "
+sleep 3
+
+echo -e "\e[34m [Select Your Pubg] "
+PS3=' 
+
+Type 1 for PUBG-GL, 2 for PUBG-KL# '
+echo -e "\e[32m "
+options=("PUBG-GL"
+                  "PUBG-KR" 
+                  "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "PUBG-GL")
+        echo ""
+     if [[ $EUID -ne 0 ]]; then
+    echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
+if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro ]; then
+if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig ]; then
+echo -e "\e[36m [Found Pubg globel-noroot]" && sleep 1 && clear
+echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
+cd /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by cybernetics " > files && echo " globel anti-crash by cybernetics " > app_crashrecord
+echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
+echo "START GG&PUBG GLOBEL AND PLAY" && sleep 5
+echo -e "\e[36m [starting log cleaner]" && sleep 10
+echo -e "\e[31m   Press CTRL+C to stop!"      
+i=1
+j=0
+while [ $i -lt 19 ]
+do
+clear
+ cd /sdcard/gamezpro/.dualsdcard &> /dev/null
+rm -rf tencent Tencent .backups MidasOversea &> /dev/null
+touch tencent Tencent .backups MidasOversea &> /dev/null
+
+rm -rf /sdcard/gamezpro/.dualsdcard/Android/data/com.tencent.ig/cache &> /dev/null
+touch /sdcard/gamezpro/.dualsdcard/Android/data/com.tencent.ig/cache &> /dev/null
+
+cd /sdcard/gamezpro/.dualsdcard/Android/data/com.tencent.ig/files &> /dev/null
+rm - rf ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
+touch ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
+
+cd /sdcard/gamezpro/.dualsdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
+rm -rf GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo Paks/*.*cures.ifs.res &> /dev/null
+touch GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo &> /dev/null
+
+cd /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig &> /dev/null
+rm - rf app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
+touch app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
+
+cd /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig/databases &> /dev/null
+rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
+touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
+   echo -e ""
+   echo -e "\e[33m Running..........[press CTRL+C to stop]"
+   echo ""
+   echo ""
+   echo -e "\e[36m Logs cleared $i Times, Looping......."
+   echo ""
+   echo""
+   echo -e "\e[36m Bypassed $k Times, ......."
+   
+   k=$i*$j
+ sleep 300
+  ((i+++))  
+  ((i*j))
+  
+done
+am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+clear & echo " ITS COFEE BREAK , IAM TIRED" && sleep 2 
+apt install sl &> /dev/null && sl && clear
+echo "ITS COFEE BREAK , IAM TIRED"
+echo "ANTIBAN OFFED"
+echo " YOU ARE PLAYING PUBG 1.30 HORUS DAMN, PLEASE RESTART GAME "
+exit 0
+
+else
+echo " Warning! error 404 "
+exit 0
+fi
+else
+echo -e "\e[31m   cant find  cybernetics globel virtual"    
+exit 0
+fi
+
+     
+     
+     
+else
+echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2 
+if [ -d /data/data/com.tencent.ig ]; then
+echo -e "\e[36m [Found gl]" && sleep 1 && clear
+echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
+echo -e "\e[36m [Injecting done with status]" && sleep 1 && clear
+echo -e "\e[36m [Starting Root GG]"
+am start -n com.hqddzfzivpeglu/com.hqddzfzivpeglu.MainActivity &> /dev/null 
+am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
+echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
+am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
+cp /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.pak /data/data/com.termux/files/usr/bin/
+rm -rf /data/data/com.tencent.ig/files
+touch /data/data/com.tencent.ig/files
+rm -rf /data/data/com.tencent.ig/app_crashrecord
+touch /data/data/com.tencent.ig/app_crashrecord
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13900.pak bs=11999 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13900.pak bs=15999 count=875
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13901.pak bs=11111 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13901.pak bs=16900 count=875
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+chmod 000 /data/data/com.tencent.ig/files/tss_tmp/* &> /dev/null
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 
+echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear && sleep 10 && echo ""
+echo -e "\e[36m [started pubg gl]" && sleep 5 && clear
+echo -e "\e[36m [starting cleaner]" && sleep 1
+echo -e "\e[31m   Press CTRL+C to stop!"      
+i=1
+j=0
+sleep 60
+PACKAGE='com.tencent.ig'
+while [ $(pidof $PACKAGE) ]
+do
+rm -rf /data/data/com.tencent.ig/app_bugly 2> /dev/null
+rm -rf /data/data/com.tencent.ig/cache 2> /dev/null
+rm -rf /data/data/com.tencent.ig/code_cache 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/tbslog 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag 2> /dev/null
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13900.pak bs=11999 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13900.pak bs=15999 count=875
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13901.pak bs=11111 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13901.pak bs=16900 count=875
+
+echo " "
+sleep 15
+echo " Bypassed Sucessfully Looping..........."
+echo " "
+
+c=$((c+1))
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+done
+sleep 1
+final=$((c/6))
+printf "\n${red}† You have played Almost ";
+echo $final
+printf "Minute †"
+echo " "
+sleep 2
+
+rm -r /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13900.pak > /dev/null 2>&1
+rm -r /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13900.pak > /dev/null 2>&1
+rm -r /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13901.pak > /dev/null 2>&1
+rm -r /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13901.pak > /dev/null 2>&1
+mv /data/data/com.termux/files/usr/bin/*.pak /sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+#am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+echo " Game Closed, Stopping......"
+sleep 5
+echo " Done......" 
+
+exit 0
+
+
+
+
+else        
+echo -e "\e[31m   Cant find pubg gl "      
+exit 0
+fi
+     
+fi       
+            
+
+            
+            
+       
+            
+
+            
+            
+                
+            
+            
+            
+            
+            
+#-------------------------------------------------------        
+            
+            
+            
+            
+            
+            
+            
+            ;;
+        "PUBG-KR")
+        if [[ $EUID -ne 0 ]]; then
+        echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
+if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro ]; then
+if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig ]; then
+echo -e "\e[36m [Found Pubg global-noroot]" && sleep 1 && clear
+echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
+cd /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by cyberneticst " > files && echo " globel anti-crash by cybernetics " > app_crashrecord
+echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
+echo "START GG&PUBG GLOBEL AND PLAY" && sleep 5
+echo -e "\e[36m [starting log cleaner]" && sleep 10
+echo -e "\e[31m   Press CTRL+C to stop!"      
+i=1
+j=0
+while [ $i -lt 19 ]
+do
+clear
+ cd /sdcard/gamezpro/.dualsdcard &> /dev/null
+rm -rf tencent Tencent .backups MidasOversea &> /dev/null
+touch tencent Tencent .backups MidasOversea &> /dev/null
+
+rm -rf /sdcard/gamezpro/.dualsdcard/Android/data/com.pubg.krmobile/cache &> /dev/null
+touch /sdcard/gamezpro/.dualsdcard/Android/data/com.pubg.krmobile/cache &> /dev/null
+
+cd /sdcard/gamezpro/.dualsdcard/Android/data/com.pubg.krmobile/files &> /dev/null
+rm - rf ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
+touch ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
+
+cd /sdcard/gamezpro/.dualsdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
+rm -rf GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo Paks/*.*cures.ifs.res &> /dev/null
+touch GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo &> /dev/null
+
+cd /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig &> /dev/null
+rm - rf app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
+touch app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
+
+cd /data/data/com.tencent.ig.com.pubg.krmobile.gamezpro/system/data/0/com.tencent.ig/databases &> /dev/null
+rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
+touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
+   echo -e ""
+   echo -e "\e[33m Running..........[press CTRL+C to stop]"
+   echo ""
+   echo ""
+   echo -e "\e[36m Logs cleared $i Times, Looping......."
+   echo ""
+   echo""
+   echo -e "\e[36m Bypassed $k Times, ......."
+   
+   k=$i*$j
+ sleep 300
+  ((i+++))  
+  ((i*j))
+  
+done
+am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+clear & echo " ITS COFEE BREAK , IAM TIRED" && sleep 2 
+apt install sl &> /dev/null && sl && clear
+echo "ITS COFEE BREAK , IAM TIRED"
+echo "ANTIBAN OFFED"
+echo " YOU ARE PLAYING PUBG 1.30 HORUS DAMN, PLEASE RESTART GAME "
+exit 0
+
+else
+echo " Warning! error 404 "
+exit 0
+fi
+else
+echo -e "\e[31m   cant find  gamezpro globel virtual"    
+exit 0
+fi
+
+
+
+else
+
+echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
+if [ -d /data/data/com.pubg.krmobile ]; then
+echo -e "\e[36m [Found kr]" && sleep 1 && clear
+echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
+echo -e "\e[36m [Injecting done with status]" && sleep 1 && clear
+echo -e "\e[36m [Starting Root GG]"
+am start -n com.hqddzfzivpeglu/com.hqddzfzivpeglu.MainActivity &> /dev/null 
+am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
+echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
+am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
+cp /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*.pak /data/data/com.termux/files/usr/bin/
+rm -rf /data/data/com.pubg.krmobile/files
+touch /data/data/com.pubg.krmobile/files
+rm -rf /data/data/com.pubg.krmobile/app_crashrecord
+touch /data/data/com.pubg.krmobile/app_crashrecord
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13900.pak bs=11999 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13900.pak bs=15999 count=875
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13901.pak bs=11111 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13901.pak bs=16900 count=875
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+chmod 000 /data/data/com.pubg.krmobile/files/tss_tmp/* &> /dev/null
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 
+echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear && sleep 10 && echo ""
+echo -e "\e[36m [started pubg kr]" && sleep 5 && clear
+echo -e "\e[36m [starting cleaner]" && sleep 1
+echo -e "\e[31m   Press CTRL+C to stop!"      
+i=1
+j=0
+sleep 60
+PACKAGE='com.pubg.krmobile'
+while [ $(pidof $PACKAGE) ]
+do
+rm -rf /data/data/com.pubg.krmobile/app_bugly 2> /dev/null
+rm -rf /data/data/com.pubg.krmobile/cache 2> /dev/null
+rm -rf /data/data/com.pubg.krmobile/code_cache 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/tbslog 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs 2> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/StatEventReportedFlag 2> /dev/null
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13900.pak bs=11999 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13900.pak bs=15999 count=875
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13901.pak bs=11111 count=999
+dd if=/dev/urandom of=/storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13901.pak bs=16900 count=875
+echo " "
+sleep 15
+echo " Bypassed Sucessfully Looping..........."
+echo " "
+
+c=$((c+1))
+if [ ! $(pidof $PACKAGE) ]; then
+break
+fi
+done
+sleep 1
+final=$((c/6))
+printf "\n${red}† You have played Almost ";
+echo $final
+printf "Minute †"
+echo " "
+sleep 2
+rm -r /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13900.pak > /dev/null 2>&1
+rm -r /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13900.pak > /dev/null 2>&1
+rm -r /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/core_patch_0.19.0.13901.pak > /dev/null 2>&1
+rm -r /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.19.0.13901.pak > /dev/null 2>&1
+mv /data/data/com.termux/files/usr/bin/*.pak /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/
+#am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+echo " Game Closed, Stopping......" 
+
+sleep 5
+
+echo " Done......" 
+exit 0
+
+
+
+else        
+echo -e "\e[31m   Cant find pubg kr "      
+exit 0
+fi
+
+
+fi
+
+
+
+#---------------------------------------------------------
+
+
+
+
+
+
+           ;;          
+        "Quit")
+        clear
+      echo "  [Process completed THANKS FOR USING  (code 127)] "           
+            exit 0
+            ;;
+        *) echo "invalid option $REPLY" && sleep 1  ;;
+    esac
+done
